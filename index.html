@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="adaptation.css">
+    <link rel="stylesheet" href="sidebar.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <nav class="flex flex-row justify-between w-full sm:px-10 px-4 py-3 bg-black">
+    <nav class="flex flex-row justify-between w-full sm:px-10 px-4 py-3 bg-slate-900">
         <div class="flex flex-row items-center gap-6">
             <!-- <img src="./images/logo.svg" alt="logo" class="font-white"> -->
             <h1 class="font-bold italic text-white font-mono text-2xl">BLOCKCHAIN</h1>
@@ -21,9 +21,12 @@
         </div>
         <div class="flex flex-row items-center xl:gap-16 lg:gap-10 md:gap-10 gap-4">
             <div class="flex flex-row items-center xl:gap-8 lg:gap-4 lg:flex hidden">
-                <a href="#" class="text-white text-xl font-mono hover:text-2xl hover:text-cyan-400 ease-out duration-300">P2P</a>
-                <a href="#" class="text-white text-xl font-mono hover:text-2xl hover:text-cyan-400 ease-out duration-300">Биржа</a>
-                <a href="#" class="text-white text-xl font-mono hover:text-2xl hover:text-cyan-400 ease-out duration-300">IOS</a>
+                <a href="#"
+                    class="text-white text-xl font-mono hover:text-2xl hover:text-cyan-400 ease-out duration-300">P2P</a>
+                <a href="#"
+                    class="text-white text-xl font-mono hover:text-2xl hover:text-cyan-400 ease-out duration-300">Биржа</a>
+                <a href="#"
+                    class="text-white text-xl font-mono hover:text-2xl hover:text-cyan-400 ease-out duration-300">IOS</a>
             </div>
             <p class="text-white font-black sm:text-lg text-sm">1 BTC = 1234$</p>
             <div class="flex flex-row items-center lg:flex hidden">
@@ -44,7 +47,32 @@
 
             <div class="sidebar_bg " id="sidebar_bg">
                 <div class="sidebar" id="sidebar">
-                    l
+                    <div class="flex flex-col gap-1">
+                        <a href="#" class="font-black text-white text-xl">
+                            Название
+                        </a>
+                        <hr>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-2">
+                            <a href="#"
+                                class="text-white text-xl font-mono hover:text-2xl hover:text-cyan-400 ease-out duration-300">P2P</a>
+                            <a href="#"
+                                class="text-white text-xl font-mono hover:text-2xl hover:text-cyan-400 ease-out duration-300">Биржа</a>
+                            <a href="#"
+                                class="text-white text-xl font-mono hover:text-2xl hover:text-cyan-400 ease-out duration-300">IOS</a>
+                        </div>
+                        <hr>
+                        <div class="flex flex-row">
+                            <a href="#" class="text-black font-bold hover:underline text-white">
+                                Вход
+                            </a>
+                            <label class="text-white px-1"> / </label>
+                            <a href="#" class="text-black font-bold hover:underline text-white">
+                                Регистрация
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
