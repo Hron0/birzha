@@ -9,7 +9,7 @@ sidebarBtn?.addEventListener('click', function () {
     sidebar?.classList.toggle("sidebar_active")
 })
 
-sidebarBg?.addEventListener('click', function (event) {
+sidebarBg?.addEventListener('click', function () {
     sidebarBg?.classList.toggle("sidebar_bg_active")
     sidebar?.classList.toggle("sidebar_active")
 })

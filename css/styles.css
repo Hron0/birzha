@@ -1,18 +1,26 @@
-*, *::after, *::before{
+*,
+*::after,
+*::before {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
+    background-color: #f5f7fa;
 }
 
-.wrapper{
-    
+.wrapper {
+    width: 80vw;
+}
+
+.active {
+    color: #f8ad13 !important;
+    border-bottom: #f8ad13 1px solid;
 }

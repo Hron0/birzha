@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/toggleSwtich.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/sidebar.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="relative">
     <nav class="flex flex-row justify-between w-full sm:px-10 px-4 py-3 bg-slate-900">
         <div class="flex flex-row items-center gap-6">
             <!-- <img src="./images/logo.svg" alt="logo" class="font-white"> -->
@@ -78,8 +79,68 @@
         </div>
     </nav>
 
-    <div class="wrapper">
+    <!--     <div class="flex w-full bg-white justify-center lg:h-[7vh] h-[12vh]">
+        <div class="2xl:w-[70vw] w-[95vw] lg:flex lg:flex-row justify-center items-end lg:gap-10 grid grid-cols-5 gap-4 justify-items-center">
+            <a href="#" class="text-base text-[#81858c] hover:text-[#f8ad13] w-fit h-8">
+                Покупка в 1 клик
+            </a>
+            <a href="#" class="text-base text-[#81858c] hover:text-[#f8ad13] w-fit active h-8">
+                P2P
+            </a>
+            <a href="#" class="text-base text-[#81858c] hover:text-[#f8ad13] w-fit h-8">
+                Фиатный депозит
+            </a>
+            <a href="#" class="text-base text-[#81858c] hover:text-[#f8ad13] w-fit h-8">
+                Регулярные покупки
+            </a>
+            <a href="#" class="text-base text-[#81858c] hover:text-[#f8ad13] w-fit h-8">
+                Bibyt Card
+            </a>
+            <a href="#" class="text-base text-[#81858c] hover:text-[#f8ad13] w-fit h-8">
+                Конвертация
+            </a>
+            <a href="#" class="text-base text-[#81858c] hover:text-[#f8ad13] w-fit h-8">
+                Руководство
+            </a>
+            <a href="#" class="text-base text-[#81858c] hover:text-[#f8ad13] w-fit h-8">
+                Объявления
+            </a>
+            <a href="#" class="text-base text-[#81858c] hover:text-[#f8ad13] w-fit h-8">
+                Ордеры
+            </a>
+            <a href="#" class="text-base text-[#81858c] hover:text-[#f8ad13] w-fit h-8">
+                P2P центр
+            </a>
+        </div>
+    </div> -->
 
+    <div class="xl:w-[65vw] lg:w-[80vw] md:w-[90vw] w-full bg-white h-[20vh] flex flex-col items-start">
+        <div class="flex flex-col">
+            <h1>Покупка BTC за RUB</h1>
+            <div class="flex flex-row gap-6">
+                <select name="type" id="type">
+                    <option value="купит">купить</option>
+                    <option value="прдать">продать</option>
+                </select>
+                <select name="from" id="from">
+                    <option value="купит">BTC</option>
+                    <option value="прдать">RUB</option>
+                </select>
+                <select name="to" id="to">
+                    <option value="купит">RUB</option>
+                    <option value="прдать">BTC</option>
+                </select>
+                <select name="transacion" id="transaction">
+                    <option value="купит">RUB</option>
+                    <option value="прдать">BTC</option>
+                </select>
+                <label class="toggle">
+                    <input class="toggle-checkbox" type="checkbox">
+                    <div class="toggle-switch"></div>
+                    <span class="toggle-label">Wi-fi</span>
+                </label>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
