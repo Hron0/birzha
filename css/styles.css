@@ -14,7 +14,9 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
     background-color: #f5f7fa;
+    padding-bottom: 25px;
 }
+
 
 .wrapper {
     width: 80vw;
@@ -29,16 +31,17 @@ body {
     color: gray;
 }
 
-select{
+select {
     height: 37px;
 }
 
 @media (min-width: 1536px) {
-    select{
-        font-size: 2rem;
-        height: 50px;
+    select {
+        font-size: 1.4rem;
+        height: 40px;
     }
-    option{
+
+    option {
         font-size: 1rem;
     }
 }
