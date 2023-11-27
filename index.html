@@ -11,7 +11,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="relative">
+<body class="relative gap-4">
     <nav class="flex flex-row justify-between w-full sm:px-10 px-4 py-3 bg-slate-900">
         <div class="flex flex-row items-center gap-6">
             <!-- <img src="./images/logo.svg" alt="logo" class="font-white"> -->
@@ -114,31 +114,42 @@
         </div>
     </div> -->
 
-    <div class="xl:w-[65vw] lg:w-[80vw] md:w-[90vw] w-full bg-white h-[20vh] flex flex-col items-start">
-        <div class="flex flex-col">
-            <h1>Покупка BTC за RUB</h1>
-            <div class="flex flex-row gap-6">
-                <select name="type" id="type">
-                    <option value="купит">купить</option>
-                    <option value="прдать">продать</option>
-                </select>
-                <select name="from" id="from">
-                    <option value="купит">BTC</option>
-                    <option value="прдать">RUB</option>
-                </select>
-                <select name="to" id="to">
-                    <option value="купит">RUB</option>
-                    <option value="прдать">BTC</option>
-                </select>
-                <select name="transacion" id="transaction">
-                    <option value="купит">RUB</option>
-                    <option value="прдать">BTC</option>
-                </select>
-                <label class="toggle">
-                    <input class="toggle-checkbox" type="checkbox">
-                    <div class="toggle-switch"></div>
-                    <span class="toggle-label">Wi-fi</span>
-                </label>
+    <div class="xl:w-[65vw] lg:w-[80vw] md:w-[90vw] w-full bg-white py-6 flex flex-col items-start rounded-xl">
+        <div class="flex flex-col px-6 pt-6 gap-2">
+            <h1 class="2xl:text-2xl text-base">Покупка BTC за RUB</h1>
+            <div class="flex lg:flex-row flex-col gap-6">
+                <div class="flex flex-row gap-6 md:flex-nowrap flex-wrap">
+                    <select name="type" id="type">
+                        <option value="купит">купить</option>
+                        <option value="прдать">продать</option>
+                    </select>
+                    <select name="from" id="from">
+                        <option value="купит">BTC</option>
+                        <option value="прдать">RUB</option>
+                    </select>
+                    <select name="to" id="to">
+                        <option value="купит">RUB</option>
+                        <option value="прдать">BTC</option>
+                    </select>
+                    <select name="transacion" id="transaction">
+                        <option value="" disabled selected hidden>Способ оплаты</option>
+                        <option value="купить">RUB</option>
+                        <option value="прдать">BTC</option>
+                    </select>
+                </div>
+                <div class="flex flex-row items-center gap-6">
+                    <label class="toggle">
+                        <input class="toggle-checkbox" type="checkbox">
+                        <div class="toggle-switch"></div>
+                        <span class="toggle-label">Только активные</span>
+                    </label>
+                    <label class="toggle">
+                        <input class="toggle-checkbox" type="checkbox">
+                        <div class="toggle-switch"></div>
+                        <span class="toggle-label">Проверенные пользователи</span>
+                    </label>
+                </div>
+
             </div>
         </div>
     </div>

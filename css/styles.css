@@ -24,3 +24,21 @@ body {
     color: #f8ad13 !important;
     border-bottom: #f8ad13 1px solid;
 }
+
+.select:invalid {
+    color: gray;
+}
+
+select{
+    height: 37px;
+}
+
+@media (min-width: 1536px) {
+    select{
+        font-size: 2rem;
+        height: 50px;
+    }
+    option{
+        font-size: 1rem;
+    }
+}

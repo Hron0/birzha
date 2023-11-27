@@ -8,8 +8,8 @@
   display: inline-block;
   background: #ccc;
   border-radius: 16px;
-  width: 58px;
-  height: 32px;
+  width: 50px;
+  height: 22px;
   position: relative;
   vertical-align: middle;
   transition: background 0.25s;
@@ -25,8 +25,8 @@
   width: 24px;
   height: 24px;
   position: absolute;
-  top: 4px;
-  left: 4px;
+  top: -1.5px;
+  left: -1px;
   transition: left 0.25s;
 }
 .toggle:hover .toggle-switch:before {
@@ -37,7 +37,7 @@
   background: #56c080;
 }
 .toggle-checkbox:checked + .toggle-switch:before {
-  left: 30px;
+  left: 28px;
 }
 
 .toggle-checkbox {
