@@ -45,3 +45,22 @@ select {
         font-size: 1rem;
     }
 }
+
+#arrow_r{
+    width: 14px;
+    height: 14px;
+    fill: #f7a909 !important;
+    animation: lefttoright 0.7s infinite linear;
+}
+
+@keyframes lefttoright {
+    0% {
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
