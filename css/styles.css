@@ -31,8 +31,16 @@ body {
     color: gray;
 }
 
+.grid-cols-33{
+    grid-template-columns: auto auto auto;
+}
+
 select {
     height: 37px;
+}
+
+.grid-rows-custom{
+    grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 @media (min-width: 1536px) {
