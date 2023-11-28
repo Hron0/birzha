@@ -14,9 +14,11 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
     background-color: #f5f7fa;
-    padding-bottom: 25px;
 }
 
+.grid-rows-5-auto{
+    grid-template-rows: repeat(5, auto);
+}
 
 .wrapper {
     width: 80vw;
